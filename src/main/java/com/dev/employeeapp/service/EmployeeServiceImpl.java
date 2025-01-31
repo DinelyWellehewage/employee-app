@@ -17,7 +17,6 @@ public class EmployeeServiceImpl implements EmployeeService{
         this.employeeRepository = employeeRepository;
     }
 
-
     @Override
     public List<Employee> findAll() {
         return employeeRepository.findAllByOrderByLastNameAsc();
